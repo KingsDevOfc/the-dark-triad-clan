@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background 0.5s, color 0.5s;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header nav a {
+  color: white;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 120px;
+  padding: 20px;
+}
+
+section {
+  padding: 40px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  background: #ff0000;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #cc0000;
+}
+
+.button.whatsapp {
+  background: #25D366;
+}
+
+.button.whatsapp:hover {
+  background: #1da851;
+}
+
+.hero {
+  max-width: 300px;
+  display: block;
+  margin: 20px auto;
+  filter: grayscale(100%);
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#theme-toggle:hover {
+  background: #666;
+}
+
+/* Temas */
+.theme-dark {
+  background: black;
+  color: white;
+}
+
+.theme-blue {
+  background: #001f3f;
+  color: white;
+}
