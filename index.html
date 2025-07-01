@@ -4,121 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>THE DARK TRIAD CLAN - Combat Warriors</title>
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background-color: white;
-      color: black;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #111;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-    }
-
-    nav {
-      margin-top: 10px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 5px 10px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      padding-top: 120px; /* espaço para o menu fixo */
-    }
-
-    section {
-      padding: 60px 20px;
-      border-bottom: 1px solid #ccc;
-      scroll-margin-top: 120px; /* evita que o menu cubra */
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    section h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    section p {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      max-width: 600px;
-      margin: 0 auto 20px auto;
-      padding-left: 20px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ff0000;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      margin: 10px auto;
-      transition: background-color 0.3s ease;
-    }
-    .button:hover {
-      background-color: #cc0000;
-    }
-    .button.whatsapp {
-      background-color: #25D366;
-    }
-    .button.whatsapp:hover {
-      background-color: #1da851;
-    }
-
-    img.hero {
-      max-width: 300px;
-      display: block;
-      margin: 20px auto;
-      filter: grayscale(100%) brightness(0.8) contrast(1.1);
-      border-radius: 8px;
-    }
-
-    footer {
-      background-color: #111;
-      >color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      letter-spacing: 1px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <header>
     <h1>THE DARK TRIAD CLAN</h1>
-    <p>Combat Warriors (CW)</p>
+    <p>Combat Warriors</p>
     <nav>
       <a href="#inicio">Início</a>
       <a href="#sobre">Sobre o Clã</a>
@@ -131,26 +30,32 @@
       <a href="#loja">Loja</a>
       <a href="#contato">Contato</a>
     </nav>
+    <button id="theme-toggle">Trocar Tema</button>
   </header>
 
   <main>
     <section id="inicio">
       <h2>Bem-vindo ao THE DARK TRIAD CLAN</h2>
-      <img src="triad.png" alt="Logo THE DARK TRIAD" class="hero" />
-      <p>O triângulo das sombras aguarda você no mundo de Combat Warriors.</p>
-      <a class="button" href="https://discord.gg/4mMSfurVWu" target="_blank">Junte-se ao Discord</a>
+      <img src="img/triad.png" alt="Logo THE DARK TRIAD" class="hero" />
+      <p>O triângulo das sombras aguarda você no Combat Warriors.</p>
+      <a class="button" href="https://discord.gg/4mMSfurVWu" target="_blank">
+        <i class="fab fa-discord"></i> Junte-se ao Discord
+      </a>
+      <audio id="bg-music" autoplay loop controls>
+        <source src="audio/fluxxwave.mp3" type="audio/mp3" />
+      </audio>
     </section>
 
     <section id="sobre">
       <h2>Sobre o Clã</h2>
-      <p>Somos um clã disciplinado e estratégico no Combat Warriors, focado em lealdade, evolução e honra.</p>
+      <p>Disciplina, estratégia, honra e lealdade ao Triângulo são a essência do nosso legado no Combat Warriors.</p>
     </section>
 
     <section id="divisoes">
       <h2>Divisões</h2>
       <h3>Primeira Divisão</h3>
       <ul>
-        <li>Anxiety</li>
+        <li>Anxiety (você)</li>
         <li>Infinity</li>
         <li>Midoriya (Andrei)</li>
       </ul>
@@ -167,38 +72,30 @@
         <li>Miranda</li>
         <li>Guaxinim (Abyssal)</li>
       </ul>
-      <h3>Outros membros</h3>
-      <ul>
-        <li>Soldados regulares</li>
-      </ul>
     </section>
 
     <section id="regras">
-      <h2>Regras do Clã</h2>
+      <h2>Regras</h2>
       <ul>
-        <li>Lealdade ao Triângulo acima de tudo</li>
+        <li>Lealdade acima de tudo</li>
         <li>Sem spam, flood ou brigas internas</li>
         <li>Proibido hacks/trapaças</li>
         <li>Respeitar a hierarquia</li>
         <li>Participação obrigatória em treinos/guerras</li>
         <li>Juramento obrigatório</li>
         <li>Traição = expulsão</li>
-        <li>Horário de recrutamento: 13h30 às 23h</li>
+        <li>Recrutamento: 13h30 às 23h</li>
       </ul>
-      <p><strong>Juramento:</strong><br>
-      “Eu, [nick], declaro submissão ao Código do Triângulo, aceito servir sem hesitar, e ofereço minhas habilidades ao THE DARK TRIAD CLAN acima de qualquer outra aliança. Reconheço o mínimo de 5.000 de score como honra inicial, e juro evoluir para conquistar meu lugar no ápice.”<br>
-      <em>(Postar no canal #juramento ao entrar)</em>
-      </p>
     </section>
 
     <section id="eventos">
       <h2>Eventos</h2>
-      <p>Calendário interativo de treinos, campeonatos e guerras em breve.</p>
+      <div id="calendar"></div>
     </section>
 
     <section id="fanartes">
       <h2>Fanartes</h2>
-      <p>Envie suas artes para o canal #fanarts no Discord e ajude a fortalecer a identidade do clã.</p>
+      <p>Envie sua arte para nosso canal #fanarts no Discord.</p>
     </section>
 
     <section id="hall">
@@ -206,7 +103,7 @@
       <ul>
         <li>Anxiety (primeira divisão)</li>
         <li>Infinity (primeira divisão)</li>
-        <li>Midoriya (Andrei) (primeira divisão)</li>
+        <li>Midoriya (Andrei)</li>
         <li>PQ (segunda divisão)</li>
         <li>Golden (segunda divisão)</li>
         <li>Miguel (segunda divisão)</li>
@@ -219,25 +116,44 @@
 
     <section id="recrutamento">
       <h2>Recrutamento</h2>
-      <p>Recrutamento aberto das 13h30 às 23h.</p>
-      <a class="button" href="https://discord.gg/4mMSfurVWu" target="_blank">Candidate-se agora</a>
+      <p>Ativo todos os dias das 13h30 às 23h.</p>
+      <a class="button" href="https://discord.gg/4mMSfurVWu" target="_blank">
+        <i class="fab fa-discord"></i> Candidate-se agora
+      </a>
     </section>
 
     <section id="loja">
       <h2>Loja</h2>
-      <p>Em breve roupas e acessórios oficiais do THE DARK TRIAD CLAN.</p>
+      <p>Em breve: roupas e acessórios oficiais do clã.</p>
     </section>
 
     <section id="contato">
       <h2>Contato</h2>
-      <p>Entre em contato com nossa equipe de liderança:</p>
-      <a class="button whatsapp" href="https://wa.me/5516996239936" target="_blank">Fale no WhatsApp</a><br>
-      <a class="button" href="https://discord.gg/4mMSfurVWu" target="_blank">Nosso Discord</a>
+      <p>Entre em contato com nossa liderança:</p>
+      <a class="button whatsapp" href="https://wa.me/5516996239936" target="_blank">
+        <i class="fab fa-whatsapp"></i> Fale no WhatsApp
+      </a>
+      <button id="share-button">
+        <i class="fas fa-share-alt"></i> Compartilhar
+      </button>
+    </section>
+
+    <section id="contador">
+      <h2>Membros do Clã</h2>
+      <p id="contador-membros">40 membros cadastrados</p>
+    </section>
+
+    <section id="frases">
+      <h2>Frases Motivacionais</h2>
+      <p id="frase-motivacional"></p>
     </section>
   </main>
 
   <footer>
-    &copy; 2024 THE DARK TRIAD CLAN - Combat Warriors | Todos os direitos reservados
+    &copy; 2025 THE DARK TRIAD CLAN | Combat Warriors
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
-</html
+</html>
