@@ -1,1 +1,243 @@
-<!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1" /> <title>THE DARK TRIAD - Combat Warriors Clã</title> <style> @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap'); * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; } body { background-color: #000; color: #eee; line-height: 1.5; min-height: 100vh; display: flex; flex-direction: column; font-size: 16px; } header { background: #110000; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #8B0000; position: sticky; top: 0; z-index: 999; } header .logo { font-family: 'UnifrakturCook', cursive; font-size: 1.8rem; color: #FFD700; user-select: none; cursor: default; } nav ul { list-style: none; display: flex; gap: 20px; } nav ul li a { color: #eee; text-decoration: none; font-weight: bold; transition: color 0.3s; font-family: 'Arial Black', sans-serif; } nav ul li a:hover { color: #8B0000; } .btn-join { background-color: #8B0000; color: #FFD700; font-weight: 700; padding: 10px 20px; border-radius: 6px; cursor: pointer; border: none; font-family: 'UnifrakturCook', cursive; transition: background-color 0.3s; >} .btn-join:hover { background-color: #b22222; } main { flex: 1; max-width: 1000px; margin: 40px auto; padding: 0 20px; } section { margin-bottom: 50px; } h1, h2, h3 { font-family: 'UnifrakturCook', cursive; color: #8B0000; margin-bottom: 15px; user-select: none; } h1 { font-size: 3rem; text-align: center; margin-bottom: 40px; color: #FFD700; text-shadow: 0 0 10px #8B0000; } h2 { font-size: 2.2rem; border-bottom: 2px solid #8B0000; padding-bottom: 8px; } p, li { font-size: 1.1rem; color: #ccc; } ul { list-style: inside disc; margin-top: 10px; } a.discord-link { color: #FFD700; text-decoration: underline; font-weight: bold; } .banner-home { background: url('https://i.imgur.com/oYZrS0m.jpg') no-repeat center center/cover; height: 300px; display: flex; justify-content: center; align-items: center; color: #FFD700; text-shadow: 0 0 10px #8B0000; font-size: 2.5rem; font-family: 'UnifrakturCook', cursive; margin-bottom: 40px; border-radius: 10px; } .btn-home-join { display: block; margin: 20px auto 50px; font-family: 'UnifrakturCook', cursive; background-color: #8B0000; color: #FFD700; padding: 15px 35px; font-size: 1.6rem; border: none; border-radius: 8px; cursor: pointer; transition: background-color 0.3s; user-select: none; text-align: center; max-width: 300px; } .btn-home-join:hover { background-color: #b22222; } .rules-list li { margin-bottom: 12px; } .juramento { background-color: #110000; border: 2px solid #8B0000; border-radius: 8px; padding: 20px; color: #FFD700; font-family: 'UnifrakturCook', cursive; font-size: 1.3rem; white-space: pre-wrap; max-width: 600px; margin: 20px auto; text-align: center; box-shadow: 0 0 15px #8B0000; } footer { background-color: #110000; color: #888; text-align: center; padding: 25px 10px; border-top: 2px solid #8B0000; font-size: 0.9rem; user-select: none; }@media(max-width: 768px) { nav ul { flex-direction: column; gap: 10px; } .banner-home { height: 220px; font-size: 1.8rem; } .btn-home-join { width: 80%; font-size: 1.3rem; } } </style> </head> <body> <header> <div class="logo">THE DARK TRIAD 🩸</div> <nav> <ul> <li><a href="#home">Início</a></li> <li><a href="#sobre">Sobre o Clã</a></li> <li><a href="#divisoes">Divisões</a></li> <li><a href="#regras">Regras</a></li> <li><a href="#eventos">Eventos</a></li> <li><a href="#fanarts">Fanarts</a></li> <li><a href="#hall">Hall da Fama</a></li> <li><a href="#recrutamento">Recrutamento</a></li> <li><a href="#loja">Loja</a></li> <li><a href="#contato">Contato</a></li> <li><a href="https://discord.gg/4mMSfurVWu" target="_blank" class="discord-link">Discord</a></li> </ul> </nav> <button class="btn-join" onclick="window.open('https://discord.gg/4mMSfurVWu', '_blank')">Junte-se Agora</button> </header> <main> <!-- Home --><section id="home" class="banner-home" role="banner" aria-label="Banner principal do THE DARK TRIAD"> THE DARK TRIAD — O Triângulo das Sombras aguarda você </section> <button class="btn-home-join" onclick="window.open('https://discord.gg/4mMSfurVWu', '_blank')">Junte-se ao Discord 🕷️</button> < </section
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>THE DARK TRIAD CLAN - Combat Warriors</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: white;
+      color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding-top: 120px; /* espaço para o menu fixo */
+    }
+
+    section {
+      padding: 60px 20px;
+      border-bottom: 1px solid #ccc;
+      scroll-margin-top: 120px; /* evita que o menu cubra */
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+      padding-left: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff0000;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 10px auto;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #cc0000;
+    }
+    .button.whatsapp {
+      background-color: #25D366;
+    }
+    .button.whatsapp:hover {
+      background-color: #1da851;
+    }
+
+    img.hero {
+      max-width: 300px;
+      display: block;
+      margin: 20px auto;
+      filter: grayscale(100%) brightness(0.8) contrast(1.1);
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #111;
+      >color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>THE DARK TRIAD CLAN</h1>
+    <p>Combat Warriors (CW)</p>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre o Clã</a>
+      <a href="#divisoes">Divisões</a>
+      <a href="#regras">Regras</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#fanartes">Fanartes</a>
+      <a href="#hall">Hall da Fama</a>
+      <a href="#recrutamento">Recrutamento</a>
+      <a href="#loja">Loja</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>Bem-vindo ao THE DARK TRIAD CLAN</h2>
+      <img src="triad.png" alt="Logo THE DARK TRIAD" class="hero" />
+      <p>O triângulo das sombras aguarda você no mundo de Combat Warriors.</p>
+      <a class="button" href="https://discord.gg/4mMSfurVWu" target="_blank">Junte-se ao Discord</a>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre o Clã</h2>
+      <p>Somos um clã disciplinado e estratégico no Combat Warriors, focado em lealdade, evolução e honra.</p>
+    </section>
+
+    <section id="divisoes">
+      <h2>Divisões</h2>
+      <h3>Primeira Divisão</h3>
+      <ul>
+        <li>Anxiety (você)</li>
+        <li>Infinity</li>
+        <li>Midoriya (Andrei)</li>
+      </ul>
+      <h3>Segunda Divisão</h3>
+      <ul>
+        <li>PQ</li>
+        <li>Golden</li>
+        <li>Miguel</li>
+      </ul>
+      <h3>Terceira Divisão</h3>
+      <ul>
+        <li>Ícaro</li>
+        <li>Henrique</li>
+        <li>Miranda</li>
+        <li>Guaxinim (Abyssal)</li>
+      </ul>
+      <h3>Outros membros</h3>
+      <ul>
+        <li>Soldados regulares</li>
+      </ul>
+    </section>
+
+    <section id="regras">
+      <h2>Regras do Clã</h2>
+      <ul>
+        <li>Lealdade ao Triângulo acima de tudo</li>
+        <li>Sem spam, flood ou brigas internas</li>
+        <li>Proibido hacks/trapaças</li>
+        <li>Respeitar a hierarquia</li>
+        <li>Participação obrigatória em treinos/guerras</li>
+        <li>Juramento obrigatório</li>
+        <li>Traição = expulsão</li>
+        <li>Horário de recrutamento: 13h30 às 23h</li>
+      </ul>
+      <p><strong>Juramento:</strong><br>
+      “Eu, [nick], declaro submissão ao Código do Triângulo, aceito servir sem hesitar, e ofereço minhas habilidades ao THE DARK TRIAD CLAN acima de qualquer outra aliança. Reconheço o mínimo de 5.000 de score como honra inicial, e juro evoluir para conquistar meu lugar no ápice.”<br>
+      <em>(Postar no canal #juramento ao entrar)</em>
+      </p>
+    </section>
+
+    <section id="eventos">
+      <h2>Eventos</h2>
+      <p>Calendário interativo de treinos, campeonatos e guerras em breve.</p>
+    </section>
+
+    <section id="fanartes">
+      <h2>Fanartes</h2>
+      <p>Envie suas artes para o canal #fanarts no Discord e ajude a fortalecer a identidade do clã.</p>
+    </section>
+
+    <section id="hall">
+      <h2>Hall da Fama</h2>
+      <ul>
+        <li>Anxiety (primeira divisão)</li>
+        <li>Infinity (primeira divisão)</li>
+        <li>Midoriya (Andrei) (primeira divisão)</li>
+        <li>PQ (segunda divisão)</li>
+        <li>Golden (segunda divisão)</li>
+        <li>Miguel (segunda divisão)</li>
+        <li>Ícaro (terceira divisão)</li>
+        <li>Henrique (terceira divisão)</li>
+        <li>Miranda (terceira divisão)</li>
+        <li>Guaxinim (Abyssal) (terceira divisão)</li>
+      </ul>
+    </section>
+
+    <section id="recrutamento">
+      <h2>Recrutamento</h2>
+      <p>Recrutamento aberto das 13h30 às 23h.</p>
+      <a class="button" href="https://discord.gg/4mMSfurVWu" target="_blank">Candidate-se agora</a>
+    </section>
+
+    <section id="loja">
+      <h2>Loja</h2>
+      <p>Em breve roupas e acessórios oficiais do THE DARK TRIAD CLAN.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Entre em contato com nossa equipe de liderança:</p>
+      <a class="button whatsapp" href="https://wa.me/5516996239936" target="_blank">Fale no WhatsApp</a><br>
+      <a class="button" href="https://discord.gg/4mMSfurVWu" target="_blank">Nosso Discord</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 THE DARK TRIAD CLAN - Combat Warriors | Todos os direitos reservados
+  </footer>
+</body>
+</html
